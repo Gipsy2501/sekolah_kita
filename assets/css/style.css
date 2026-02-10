@@ -1,0 +1,41 @@
+/* assets/css/style.css */
+
+:root {
+    --navy-angkasa: #00264d;  /* Warna Biru Gelap Utama */
+    --biru-langit: #00aaff;   /* Warna Aksen */
+    --emas-angkasa: #f1c40f;  /* Warna Emas/Prestasi */
+    --abu-muda: #f4f6f9;      /* Background halaman */
+    --putih: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Pastikan font ini ada */
+    background-color: var(--abu-muda);
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling Navbar/Sidebar biar Angkasa banget */
+.bg-angkasa {
+    background-color: var(--navy-angkasa) !important;
+    color: var(--putih);
+}
+
+.btn-angkasa {
+    background-color: var(--navy-angkasa);
+    color: var(--putih);
+    border: 1px solid var(--navy-angkasa);
+}
+
+.btn-angkasa:hover {
+    background-color: var(--biru-langit);
+    color: var(--putih);
+}
+
+/* Styling Card Tugas */
+.card-tugas {
+    border-top: 4px solid var(--emas-angkasa); /* Garis emas di atas kartu */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: var(--putih);
+    border-radius: 5px;
+}
