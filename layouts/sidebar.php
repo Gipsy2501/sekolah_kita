@@ -42,6 +42,14 @@ $role_sb = $_SESSION['role'];
             <i class="fas fa-calendar-check"></i> <span>Rekap Absensi</span>
         </a>
 
+        <a href="/sekolah_kita/admin/absensi/pengaturan_absen.php" class="nav-item-custom <?= isActive('pengaturan_absen.php') ?>">
+            <i class="fas fa-calendar-check"></i> <span>Pengaturan Absensi</span>
+        </a>
+
+        <a href="/sekolah_kita/admin/rekap_mbg.php" class="nav-item-custom <?= isActive('rekap_mbg.php') ?>">
+            <i class="fas fa-calendar-check"></i> <span>Rekap MBG</span>
+        </a>
+
     <?php } elseif($role_sb == 'guru'){ ?>
         <div class="menu-label">Utama</div>
         <a href="/sekolah_kita/guru/index.php" class="nav-item-custom <?= isActive('index.php') ?>">
@@ -81,7 +89,7 @@ $role_sb = $_SESSION['role'];
     <?php } ?>
 
     <div class="sidebar-footer mt-auto">
-        <a href="../logout.php" onclick="return confirm('Yakin ingin keluar?')" class="text-white text-decoration-none d-flex align-items-center gap-2 w-100">
+        <a href="<?php echo $base_url; ?>auth/logout.php" onclick="return confirm('Yakin ingin keluar?')" class="text-white text-decoration-none d-flex align-items-center gap-2 w-100">
             <div class="bg-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;">
                 <i class="fas fa-power-off"></i>
             </div>
@@ -100,7 +108,7 @@ $role_sb = $_SESSION['role'];
         <a href="/sekolah_kita/admin/siswa/data_siswa.php" class="b-nav-item <?= isActive('data_siswa.php') ?>">
             <i class="fas fa-users"></i> <span>Siswa</span>
         </a>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#menuLengkapModal" class="b-nav-item">
+        <a href="halaman_segera.php" data-bs-toggle="modal" data-bs-target="#menuLengkapModal" class="b-nav-item">
             <div class="bg-navy text-white rounded-circle shadow d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; margin-top: -20px; border: 3px solid white; background-color: #0a192f;">
                 <i class="fas fa-th-large" style="font-size: 1.2rem; margin:0;"></i>
             </div>
