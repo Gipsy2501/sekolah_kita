@@ -75,6 +75,29 @@ $tugas_pending = 0;
         </div>
     </div>
 
+    <?php if (isset($siswa['is_pengurus']) && $siswa['is_pengurus'] == 1) { ?>
+    <div class="row mb-4 animate__animated animate__fadeInDown">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <div class="card-body p-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="bg-white bg-opacity-20 rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <i class="fas fa-clipboard-check fa-2x text-white"></i>
+                        </div>
+                        <div class="text-white">
+                            <h5 class="fw-bold mb-1" style="font-family: 'Outfit';">Otoritas Pengurus Kelas Aktif!</h5>
+                            <p class="mb-0 small text-white-50">Gunakan fitur ini saat berada di lingkungan sekolah untuk menginput data absensi harian teman sekelasmu.</p>
+                        </div>
+                    </div>
+                    <a href="absensi/input_kelas.php" class="btn btn-light text-success fw-bold rounded-pill px-4 py-2 shadow-sm">
+                        <i class="fas fa-pen-alt me-2"></i> Mulai Absen Kelas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php } ?>
+
     <div class="row mt-4">
         
         <div class="col-md-5 mb-4">

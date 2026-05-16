@@ -194,7 +194,7 @@ if(isset($koneksi)){
 
 <div class="topbar">
     <div class="d-flex align-items-center gap-3">
-        <a href="#" class="d-lg-none text-decoration-none d-flex align-items-center gap-2">
+        <a href="halaman_segera.php" class="d-lg-none text-decoration-none d-flex align-items-center gap-2">
             <img src="/sekolah_kita/assets/img/logo-angkasa.png" width="32">
             <div>
                 <h6 class="m-0 fw-bold text-dark" style="line-height:1">SMK ANGKASA</h6>
@@ -219,7 +219,7 @@ if(isset($koneksi)){
     </div>
 
     <div class="dropdown">
-        <a href="#" class="d-flex align-items-center text-decoration-none gap-3" data-bs-toggle="dropdown">
+        <a href="halaman_segera.php" class="d-flex align-items-center text-decoration-none gap-3" data-bs-toggle="dropdown">
             <div class="text-end d-none d-lg-block">
                 <div class="fw-bold text-dark small"><?php echo substr($_SESSION['nama'], 0, 15); ?></div>
                 <div class="badge bg-light text-primary border border-primary rounded-pill" style="font-size: 10px;">
@@ -233,7 +233,7 @@ if(isset($koneksi)){
         <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg rounded-4 mt-2 overflow-hidden">
             <li><a class="dropdown-item py-2" href="../profil/saya.php"><i class="fas fa-user-cog me-2 text-warning"></i> Edit Profil</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item py-2 text-danger fw-bold" href="../logout.php" onclick="return confirm('Keluar sistem?')"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+            <li><a class="dropdown-item py-2 text-danger fw-bold" href="<?php echo $base_url; ?>auth/logout.php" onclick="return confirm('Keluar sistem?')"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
         </ul>
     </div>
 </div>
